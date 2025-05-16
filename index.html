@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Nosso Grupo</title>
@@ -10,16 +11,16 @@
 <header class="site-header">
 
   <div class="logo">
-  <img src="imagens/logo.png" alt="Logo do Grupo" class="logo-img" />
-  <a href="index.html">The Casas</a>
-</div>
+    <img src="imagens/logo.png" alt="Logo do Grupo" class="logo-img" />
+    <a href="index.html">The Casas</a>
+  </div>
 
 
   <nav class="nav-menu">
-    <a href="html/João.html">João</a>
-    <a href="html/Victor.html">Victor</a>
-    <a href="html/Sandiego.html">Sandiego</a>
-    <a href="html/Arthur.html">Arthur</a>
+    <a href="html/joao.html">João</a>
+    <a href="html/victor.html">Victor</a>
+    <a href="html/sandiego.html">Sandiego</a>
+    <a href="html/arthur.html">Arthur</a>
   </nav>
 
   <div class="search-bar">
@@ -34,45 +35,69 @@
 
   <!-- Carrossel: apenas uma imagem visível por vez -->
   <div class="carousel">
-    <!-- Botão anterior -->
-    <button class="arrow prev">‹</button>
     <!-- Janela que esconde overflow -->
     <div class="carousel-window">
+      <!-- Botão anterior -->
+      <button class="arrow prev">‹</button>
       <!-- Faixa de itens que desliza horizontalmente -->
       <div class="carousel-track">
         <!-- Cada item é um link que leva à página do amigo -->
-        <a href="João.html" class="carousel-item">
-          <img src="imagens/joao.jpg" alt="João">
+        <a href="html/amigos.html" class="carousel-item">
+          <img src="imagens/grupo1.jpg" alt="João">
         </a>
-        <a href="Victor.html" class="carousel-item">
-          <img src="imagens/victor.jpg" alt="Victor">
+        <a href="html/amigos.html" class="carousel-item">
+          <img src="imagens/grupo2.jpg" alt="Victor">
         </a>
-        <a href="Sandiego.html" class="carousel-item">
-          <img src="imagens/sandiego.jpg" alt="Sandiego">
+        <a href="html/amigos.html" class="carousel-item">
+          <img src="imagens/grupo3.jpg" alt="Sandiego">
         </a>
-        <a href="Arthur.html" class="carousel-item">
-          <img src="imagens/arthur.jpg" alt="Arthur">
+        <a href="html/amigos.html" class="carousel-item">
+          <img src="imagens/grupo4.jpg" alt="Arthur">
         </a>
       </div>
+      <!-- Botão próximo -->
+      <button class="arrow next">›</button>
     </div>
-    <!-- Botão próximo -->
-    <button class="arrow next">›</button>
   </div>
 
-  <!-- Lista simples de links para navegação alternativa -->
-  <ul>
-    <li><a href="html/João.html">João</a></li>
-    <li><a href="html/Victor.html">Victor</a></li>
-    <li><a href="html/Sandiego.html">Sandiego</a></li>
-    <li><a href="html/Arthur.html">Arthur</a></li>
-  </ul>
 
   <!-- Container para cards (página inicial) -->
   <div class="container-amigos">
-    <!-- Opcional: artigos com classe .amigo para exibir informações resumidas -->
+    <ul class="cards-list">
+      <li>
+        <a href="html/joao.html" class="card-amigo">
+          <img src="imagens/joao.jpg" alt="Foto do João">
+          <span>João</span>
+          <p class="descricao-amigo">Gosta de porra nenhuma essa merda tem depressão.</p>
+        </a>
+      </li>
+      <li>
+        <a href="html/victor.html" class="card-amigo">
+          <img src="imagens/victor.jpg" alt="Foto do Victor">
+          <span>Victor</span>
+          <p class="descricao-amigo">Gosta de relaxar e odeia trabalhar.</p>
+        </a>
+      </li>
+      <li>
+        <a href="html/sandiego.html" class="card-amigo">
+          <img src="imagens/sandiego.jpg" alt="Foto do Sandiego">
+          <span>Sandiego</span>
+          <p class="descricao-amigo">Gosta de fazer pão e da namorada.</p>
+        </a>
+      </li>
+      <li>
+        <a href="html/arthur.html" class="card-amigo">
+          <img src="imagens/arthur.jpg" alt="Foto do Arthur">
+          <span>Arthur</span>
+          <p class="descricao-amigo">Gosta de mulheres e de fazer cursos.</p>
+        </a>
+      </li>
+    </ul>
   </div>
+
 
   <!-- Script externo do carrossel -->
   <script src="js/carousel.js"></script>
 </body>
+
 </html>
